@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Aman Bhatti | Software Development Engineer</title>
+<meta name="description" content="Aman Bhatti, software development engineer. Java, Spring Boot, Python, FastAPI, Kafka, Redis. Open to Summer 2027 internships.">
+<meta property="og:title" content="Aman Bhatti | Software Development Engineer">
+<meta property="og:description" content="Backend and full stack projects, internships and problem solving.">
+<meta name="theme-color" content="#0B1020">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22%3E%3Crect width=%2232%22 height=%2232%22 rx=%226%22 fill=%22%236EA8FF%22/%3E%3Ctext x=%2216%22 y=%2223%22 font-size=%2219%22 font-weight=%22700%22 text-anchor=%22middle%22 fill=%22%230B1020%22 font-family=%22monospace%22%3EA%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0B1020;--card:#121933;--ink:#E8ECF5;--mut:#9AA5BD;--line:#222B45;--ac:#6EA8FF;--gr:#57D38C;--am:#F2B84B;
+--f:'DM Sans','Segoe UI',system-ui,sans-serif;--m:'JetBrains Mono','Courier New',monospace;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0B1020}}
+:root[data-theme="dark"]{--bg:#0B1020}
+html{scroll-behavior:smooth;scroll-padding-top:64px}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.65 var(--f);overflow-x:hidden}
+a{color:var(--ac)}
+:focus-visible{outline:2px solid var(--ac);outline-offset:3px;border-radius:4px}
+#bg{position:fixed;inset:0;z-index:0;pointer-events:none;opacity:.55}
+main,nav,footer{position:relative;z-index:1}
+.w{max-width:960px;margin:0 auto;padding:0 20px}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:rgba(11,16,32,.85);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+nav .w{display:flex;justify-content:space-between;align-items:center;height:56px;gap:16px}
+.logo{font-weight:700;color:var(--ink);text-decoration:none;white-space:nowrap}
+nav ul{display:flex;gap:20px;list-style:none;margin:0;padding:0;overflow-x:auto;font-size:.92rem}
+nav ul a{color:var(--mut);text-decoration:none;white-space:nowrap}nav ul a:hover{color:var(--ink)}
+.hero{padding:88px 0 40px}
+.st{display:inline-flex;align-items:center;gap:8px;font:400 .84rem var(--m);color:var(--gr);border:1px solid var(--line);border-radius:99px;padding:4px 12px;margin-bottom:22px}
+.st i{width:8px;height:8px;border-radius:50%;background:var(--gr);animation:p 2s infinite}
+@keyframes p{50%{opacity:.3}}
+h1{font:700 clamp(2.6rem,8vw,4.8rem)/1.05 var(--f);letter-spacing:-.035em;margin:0 0 10px}
+.role{font-size:clamp(1.15rem,3.6vw,1.6rem);color:var(--ac);font-weight:500;margin:0 0 20px}
+.hero p.b{max-width:58ch;color:var(--mut);margin:0 0 14px}
+.hero p.b b{color:var(--ink);font-weight:500}
+.tp{font:400 1rem var(--m);color:var(--ink);margin:22px 0 26px;min-height:1.6em}
+.caret{display:inline-block;width:.55ch;height:1.05em;background:var(--ac);vertical-align:-.15em;animation:bl 1s steps(1) infinite}
+@keyframes bl{50%{opacity:0}}
+.btns{display:flex;gap:10px;flex-wrap:wrap}
+.btn{font:500 .95rem var(--f);text-decoration:none;color:var(--ink);padding:11px 20px;border-radius:8px;border:1px solid var(--line);background:var(--card);transition:.15s}
+.btn:hover{border-color:var(--ac);transform:translateY(-2px)}
+.btn.p{background:var(--ac);border-color:var(--ac);color:#08111f;font-weight:700}
+section{padding:52px 0}
+h2{font:700 clamp(1.6rem,4.5vw,2.1rem)/1.15 var(--f);letter-spacing:-.02em;margin:0 0 8px}
+.lead{color:var(--mut);margin:0 0 24px;max-width:58ch}
+.term{border:1px solid var(--line);border-radius:12px;background:#080C1A;overflow:hidden}
+.tb{display:flex;gap:6px;align-items:center;padding:9px 14px;border-bottom:1px solid var(--line);font:400 .76rem var(--m);color:var(--mut)}
+.tb i{width:10px;height:10px;border-radius:50%;background:#3a4463}.tb span{margin-left:8px}
+#out{height:300px;overflow-y:auto;padding:14px 16px;font:400 .86rem/1.55 var(--m);color:#CBD5EE}
+#out .p{color:var(--gr)}#out .h{color:var(--am)}#out .e{color:#F0787B}#out a{color:var(--ac)}
+.ir{display:flex;gap:8px;padding:10px 16px;border-top:1px solid var(--line);font:400 .88rem var(--m)}
+.ir span{color:var(--gr);white-space:nowrap}
+#in{flex:1;min-width:0;background:none;border:0;outline:0;color:var(--ink);font:inherit}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+.chips button{font:400 .8rem var(--m);color:var(--ac);background:var(--card);border:1px solid var(--line);border-radius:6px;padding:6px 12px;cursor:pointer}
+.chips button:hover{border-color:var(--ac)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+@media(max-width:860px){.grid{grid-template-columns:1fr}}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:20px;transition:.18s;display:flex;flex-direction:column}
+.card:hover{border-color:var(--ac);transform:translateY(-4px)}
+.card h3{font:700 1.25rem var(--f);margin:0 0 2px}
+.card .t{font:400 .78rem var(--m);color:var(--gr);margin-bottom:12px}
+.card p{margin:0 0 14px;color:var(--mut);font-size:.94rem;flex:1}
+.tg{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:14px}
+.tg span{font:400 .72rem var(--m);background:#0E1530;border:1px solid var(--line);border-radius:5px;padding:2px 8px;color:var(--mut)}
+.card a{font-size:.9rem;font-weight:500}
+.tl{border-left:2px solid var(--line);margin-left:6px;padding-left:24px}
+.ti{position:relative;margin-bottom:26px}
+.ti::before{content:"";position:absolute;left:-31px;top:8px;width:10px;height:10px;border-radius:50%;background:var(--ac);box-shadow:0 0 0 4px var(--bg)}
+.ti h3{margin:0;font:700 1.08rem var(--f)}
+.ti .wh{font:400 .78rem var(--m);color:var(--am);margin:2px 0 6px}
+.ti ul{margin:0;padding-left:18px;color:var(--mut);font-size:.95rem}
+.now{list-style:none;padding:0;margin:0;display:grid;gap:10px}
+.now li{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 16px;color:var(--mut)}
+.now b{color:var(--ink);font-weight:500}
+.lc{display:grid;grid-template-columns:1fr 1fr;gap:26px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:24px}
+@media(max-width:700px){.lc{grid-template-columns:1fr}}
+.rk{font:700 2.8rem/1 var(--f);letter-spacing:-.03em}.rk small{font:400 .95rem var(--f);color:var(--mut);letter-spacing:0}
+.df{display:grid;grid-template-columns:64px 1fr 34px;gap:10px;align-items:center;margin:9px 0;font-size:.9rem}
+.df i{display:block;height:9px;border-radius:5px;width:0;transition:width 1.2s cubic-bezier(.2,.8,.2,1)}
+.df em{font:400 .82rem var(--m);font-style:normal;color:var(--mut);text-align:right}
+.hi a.big{font:700 clamp(1.3rem,5vw,2.2rem) var(--f);color:var(--ink);text-decoration:none;border-bottom:2px solid var(--ac);word-break:break-all}
+.hi{padding:60px 0 80px}
+footer{border-top:1px solid var(--line);padding:20px 0 40px;color:var(--mut);font-size:.85rem}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<canvas id="bg"></canvas>
+<nav><div class="w"><a class="logo" href="#top">Aman Bhatti</a>
+<ul><li><a href="#terminal">Terminal</a></li><li><a href="#work">Projects</a></li><li><a href="#exp">Experience</a></li><li><a href="#dsa">DSA</a></li><li><a href="#contact">Contact</a></li></ul></div></nav>
+<main id="top"><div class="w">
+
+<div class="hero">
+<div class="st"><i></i>Open to Summer 2027 internships</div>
+<h1>Hi, I'm Aman.</h1>
+<p class="role">Software Development Engineer</p>
+<p class="b">I'm a third-year CS student at COER, Muzaffarnagar, and a <b>backend developer intern at Axionix Technologies</b>. I like the part of software nobody sees: queues, locks, retries, and the things that keep a service alive when traffic jumps.</p>
+<p class="b">Most of my work is in <b>Java, Spring Boot, Python and FastAPI</b>, with Kafka, Redis and PostgreSQL underneath.</p>
+<div class="tp">I build <span id="role"></span><span class="caret"></span></div>
+<div class="btns"><a class="btn p" href="mailto:amanbhatti00187@gmail.com">Email me</a><a class="btn" href="Aman_Bhatti_Resume.pdf">Resume</a><a class="btn" href="https://github.com/Amanbhatti008">GitHub</a><a class="btn" href="https://linkedin.com/in/aman-bhatti01">LinkedIn</a></div>
+</div>
+
+<section id="terminal">
+<h2>Poke around</h2>
+<p class="lead">Type a command or tap one below. If you're short on time, try <b>hire</b>.</p>
+<div class="term">
+<div class="tb"><i></i><i></i><i></i><span>aman@portfolio: ~</span></div>
+<div id="out" aria-live="polite"></div>
+<div class="ir"><span>~$</span><input id="in" autocomplete="off" autocapitalize="off" spellcheck="false" aria-label="Terminal command"></div>
+</div>
+<div class="chips" id="chips"></div>
+</section>
+
+<section id="work">
+<h2>Projects</h2>
+<p class="lead">Three things I built to understand how real systems behave.</p>
+<div class="grid">
+<div class="card"><h3>FlowForge AI</h3><div class="t">workflow orchestration platform</div><p>Runs business workflows as DAGs with scheduling, retries and failure recovery. Kafka carries tasks between services, Redis locks stop two workers from picking the same task, and it deploys on Kubernetes. Has a React Flow builder for drawing workflows.</p><div class="tg"><span>Java</span><span>Spring Boot</span><span>Kafka</span><span>Redis</span><span>PostgreSQL</span><span>Docker</span><span>K8s</span></div><a href="https://github.com/Amanbhatti008">View on GitHub</a></div>
+<div class="card"><h3>TurboCache</h3><div class="t">in-memory cache in C++20</div><p>A multithreaded cache server using epoll for networking, PMR for memory and LRU for eviction. Benchmarked at over 14K requests per second under concurrent load.</p><div class="tg"><span>C++20</span><span>Linux</span><span>epoll</span><span>CMake</span></div><a href="https://github.com/Amanbhatti008">View on GitHub</a></div>
+<div class="card"><h3>LuminaVision ADAS</h3><div class="t">driver assistance with computer vision</div><p>Detects lanes and objects, estimates collision risk and watches for driver fatigue on a live video stream at about 30 FPS. A FastAPI backend feeds a telemetry dashboard.</p><div class="tg"><span>Python</span><span>OpenCV</span><span>YOLOv8</span><span>FastAPI</span><span>Docker</span></div><a href="https://github.com/Amanbhatti008">View on GitHub</a></div>
+</div>
+</section>
+
+<section id="exp">
+<h2>Experience</h2>
+<div class="tl" style="margin-top:22px">
+<div class="ti"><h3>Backend Developer Intern, Axionix Technologies</h3><div class="wh">Aug 2026 to now</div><ul><li>Building backend services, REST APIs and database schemas.</li><li>Working on reliability, code quality and maintainability.</li></ul></div>
+<div class="ti"><h3>Machine Learning Engineering Intern, FlyRank AI</h3><div class="wh">Jul 2026 to Aug 2026</div><ul><li>Built FastAPI microservices that handled 200+ concurrent inference requests.</li><li>Cut average processing latency by about 25% and added retries, error handling and monitoring.</li></ul></div>
+<div class="ti"><h3>Green Skills and Applied AI Intern, 1M1B</h3><div class="wh">Jun 2026 to Aug 2026</div><ul><li>Used AI and Power BI analytics on sustainability problems, working in a remote team.</li></ul></div>
+<div class="ti"><h3>Software Development Intern, COER</h3><div class="wh">May 2025 to Jul 2025</div><ul><li>Wrote C++ and SQL modules that automated report generation and cut processing time by 40%.</li><li>Reworked queries and indexing, which made data retrieval about 30% faster.</li></ul></div>
+</div>
+</section>
+
+<section id="now">
+<h2>Right now</h2>
+<ul class="now" style="margin-top:20px">
+<li><b>Interning</b> at Axionix as a backend developer.</li>
+<li><b>Contributing</b> to open source through GSSoC 2026.</li>
+<li><b>Studying</b> system design and distributed systems.</li>
+<li><b>Solving</b> LeetCode problems, mostly in C++.</li>
+</ul>
+</section>
+
+<section id="dsa">
+<h2>Problem solving</h2>
+<div class="lc" style="margin-top:20px">
+<div><div class="rk">1955 <small>LeetCode contest rating</small></div><p style="margin:10px 0 0;color:var(--mut)">Knight badge. Global rank 28,650 of 884,439, top 3.35%. 242 problems solved, strongest at dynamic programming, backtracking and divide and conquer.</p></div>
+<div id="df"></div>
+</div>
+</section>
+
+<section id="contact" class="hi">
+<h2>Say hi</h2>
+<p class="lead">I'm looking for a Summer 2027 SDE, backend or full stack internship. The fastest way to reach me is email.</p>
+<a class="big" href="mailto:amanbhatti00187@gmail.com">amanbhatti00187@gmail.com</a>
+</section>
+
+</div></main>
+<footer><div class="w">&copy; 2026 Aman Bhatti. B.Tech CSE, College of Engineering Roorkee.</div></footer>
+
+<script>
+var $=function(s){return document.querySelector(s)},rm=matchMedia('(prefers-reduced-motion:reduce)').matches;
+var cv=$('#bg'),cx=cv.getContext('2d'),W,H,N=[];
+function rs(){W=cv.width=innerWidth;H=cv.height=innerHeight;var n=Math.min(38,Math.floor(W*H/32000));N=[];for(var i=0;i<n;i++)N.push({x:Math.random()*W,y:Math.random()*H,vx:(Math.random()-.5)*.22,vy:(Math.random()-.5)*.22})}
+addEventListener('resize',rs);rs();
+function draw(){cx.clearRect(0,0,W,H);var i,j,a,b,d;
+for(i=0;i<N.length;i++){a=N[i];if(!rm){a.x+=a.vx;a.y+=a.vy;if(a.x<0||a.x>W)a.vx*=-1;if(a.y<0||a.y>H)a.vy*=-1}}
+for(i=0;i<N.length;i++)for(j=i+1;j<N.length;j++){a=N[i];b=N[j];d=Math.hypot(a.x-b.x,a.y-b.y);if(d<150){cx.strokeStyle='rgba(110,168,255,'+(.2*(1-d/150))+')';cx.beginPath();cx.moveTo(a.x,a.y);cx.lineTo(b.x,b.y);cx.stroke()}}
+cx.fillStyle='rgba(110,168,255,.7)';for(i=0;i<N.length;i++){cx.beginPath();cx.arc(N[i].x,N[i].y,1.8,0,7);cx.fill()}
+if(!rm)requestAnimationFrame(draw)}
+draw();
+var R=['backend systems that hold up under load.','REST APIs in Java and Python.','event-driven services with Kafka.','full stack apps, end to end.'],ri=0,ci=0,dl=0,re=$('#role');
+function ty(){var s=R[ri];if(!dl){ci++;re.textContent=s.slice(0,ci);if(ci===s.length){dl=1;return setTimeout(ty,1600)}}else{ci--;re.textContent=s.slice(0,ci);if(!ci){dl=0;ri=(ri+1)%R.length}}setTimeout(ty,dl?25:60)}
+if(rm)re.textContent=R[0];else ty();
+var out=$('#out'),inp=$('#in'),hist=[],hi=0;
+function ln(t,c,h){var d=document.createElement('div');if(h){var a=document.createElement('a');a.href=h;a.target='_blank';a.rel='noopener';a.textContent=t;d.appendChild(a)}else d.textContent=t;if(c)d.className=c;out.appendChild(d);out.scrollTop=out.scrollHeight}
+var C={
+help:function(){return[['Commands:','h'],'about  skills  projects  experience  leetcode  contact  hire  clear']},
+about:function(){return['Aman Bhatti. Third-year B.Tech CSE at COER (2024-2028).','Backend intern at Axionix. Java, Spring Boot, Python, FastAPI.','I enjoy distributed systems, concurrency and clean APIs.']},
+skills:function(){return[['Languages','h'],'  Java, Python, C++20, SQL, JavaScript, TypeScript',['Backend','h'],'  Spring Boot, Hibernate, FastAPI, REST, microservices',['Infra and data','h'],'  Kafka, Redis, PostgreSQL, MySQL, MongoDB, Docker, Kubernetes, AWS, Linux']},
+projects:function(){return[['FlowForge AI','h'],'  DAG workflow engine. Java, Spring Boot, Kafka, Redis, PostgreSQL, K8s',['TurboCache','h'],'  C++20 cache, 14K+ req/sec, epoll, LRU',['LuminaVision ADAS','h'],'  Real-time vision at ~30 FPS. YOLOv8, OpenCV, FastAPI']},
+experience:function(){return['Aug 2026 - now   Axionix Technologies   Backend Developer Intern','Jul-Aug 2026     FlyRank AI             ML Engineering Intern','Jun-Aug 2026     1M1B                   Green Skills and Applied AI Intern','May-Jul 2025     COER                   Software Development Intern']},
+leetcode:function(){return[['LeetCode Knight','h'],'Rating 1955, top 3.35%, 242 solved (72 easy, 136 medium, 34 hard)']},
+contact:function(){return[['amanbhatti00187@gmail.com','','mailto:amanbhatti00187@gmail.com'],['linkedin.com/in/aman-bhatti01','','https://linkedin.com/in/aman-bhatti01'],['github.com/Amanbhatti008','','https://github.com/Amanbhatti008']]},
+hire:function(){return[['Great choice.','p'],'Email me and we can talk: ',['amanbhatti00187@gmail.com','','mailto:amanbhatti00187@gmail.com']]}
+};
+function run(c){ln('~$ '+c,'p');var k=c.trim().toLowerCase().replace(/^sudo\s+/,'').replace(/\s+aman$/,'');if(!k)return;
+if(k==='clear'){out.textContent='';return}
+if(C[k]){C[k]().forEach(function(x){typeof x==='string'?ln(x):ln(x[0],x[1],x[2])})}else ln('command not found: '+c.trim().slice(0,40)+'. Try help.','e')}
+inp.addEventListener('keydown',function(e){if(e.key==='Enter'){var v=inp.value;hist.push(v);hi=hist.length;inp.value='';run(v)}else if(e.key==='ArrowUp'&&hi>0){inp.value=hist[--hi]}else if(e.key==='ArrowDown'){hi=Math.min(hi+1,hist.length);inp.value=hist[hi]||''}});
+['help','about','skills','projects','experience','leetcode','contact','hire'].forEach(function(c){var b=document.createElement('button');b.type='button';b.textContent=c;b.onclick=function(){run(c)};$('#chips').appendChild(b)});
+ln('Type help to see what you can ask.','h');
+var df=$('#df');[['Easy',72,'var(--gr)'],['Medium',136,'var(--am)'],['Hard',34,'#F0787B']].forEach(function(r){df.insertAdjacentHTML('beforeend','<div class="df"><span>'+r[0]+'</span><i data-w="'+(r[1]/136*100)+'%" style="background:'+r[2]+'"></i><em>'+r[1]+'</em></div>')});
+new IntersectionObserver(function(es,o){es.forEach(function(e){if(e.isIntersecting){df.querySelectorAll('i').forEach(function(i){i.style.width=i.dataset.w});o.disconnect()}})},{threshold:.3}).observe(df);
+</script>
+</body>
+</html>
